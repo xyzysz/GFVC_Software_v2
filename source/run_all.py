@@ -13,7 +13,7 @@ def read_config_file(config_path):
 #dataset params 
 RGB_SEQ_DIR = '/home/ysz/datasets/testing_sequence_30/'  ###You should download the testing sequence and modify the dir.
 YUV_SEQ_DIR = '/home/ysz/datasets/testing_sequence_30_yuv420/'
-SEQ_LIST = ['001'] #,'002','003','004','005','006','007','008','009','010','011','012','013','014','015'] #
+SEQ_LIST = ['001','002','003','004','005','006','007','008','009','010','011','012','013','014','015'] #
 
 
 #execution params 
@@ -23,15 +23,15 @@ PATH_TO_EVAL = '/home/ysz/GFVC_Software_v2/evaluate/'
 DATASETS = ['VOXCELEB','CFVQA']
 
 # MODELS = ['CFTE','FV2V','FOMM','DAC','HDAC','HDAC_Extension']
-# MODELS = ['DAC','HDAC','HDAC_Extension']
-MODELS = ['CFTE']
+MODELS = ['DAC','HDAC','HDAC_Extension']
 
-ENCODE = False
-DECODE = False
+
+ENCODE = True
+DECODE = True
 EVALUATE = True
-RGB2YUV = False
-EVAL_RGB = False
-EVAL_YUV = False
+RGB2YUV = True
+EVAL_RGB = True
+EVAL_YUV = True
 SUMMARY_RESULTS = True
 
 ###########################################################################################################
